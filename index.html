@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Floats: Layout Magic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS Floats: Layout Magic</h1>
+            <p class="subtitle">Mastering the Art of Web Layout</p>
+        </header>
+
+        <nav class="floating-nav">
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#basics">Basics</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#best-practices">Best Practices</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="intro" class="slide">
+                <h2>Introduction to CSS Floats</h2>
+                <div class="float-demo">
+                    <div class="float-box left">Float Left</div>
+                    <p>Floats are a powerful CSS property that allows elements to be positioned to the left or right of their container, with other content flowing around them. This technique revolutionized web layout design and remains relevant today.</p>
+                </div>
+            </section>
+
+            <section id="basics" class="slide">
+                <h2>Basic Float Properties</h2>
+                <div class="code-example">
+                    <pre><code>
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+                    </code></pre>
+                </div>
+            </section>
+
+            <section id="examples" class="slide">
+                <h2>Practical Examples</h2>
+                <div class="example-container">
+                    <div class="example-box">
+                        <h3>Image Gallery</h3>
+                        <div class="gallery">
+                            <div class="gallery-item"></div>
+                            <div class="gallery-item"></div>
+                            <div class="gallery-item"></div>
+                            <div class="gallery-item"></div>
+                        </div>
+                    </div>
+                    <div class="example-box">
+                        <h3>Text Wrapping</h3>
+                        <div class="text-wrap-demo">
+                            <div class="float-image"></div>
+                            <p>This text wraps around the floated image, demonstrating how content can flow around floated elements.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="best-practices" class="slide">
+                <h2>Best Practices</h2>
+                <ul class="practices-list">
+                    <li>Always use clearfix to prevent layout issues</li>
+                    <li>Consider using modern alternatives like Flexbox or Grid</li>
+                    <li>Be mindful of responsive design</li>
+                    <li>Use floats for their intended purpose</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Created with ❤️ for CSS enthusiasts</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
